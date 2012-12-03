@@ -46,6 +46,7 @@
     context.beginPath();
     context.lineWidth = thick;
     context.strokeStyle = color;
+    i = iMin;
     while (true) {
       xx = dx * i;
       yy = scale * func(xx / scale);

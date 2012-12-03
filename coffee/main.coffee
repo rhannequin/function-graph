@@ -49,8 +49,9 @@ funGraph = (func, i) ->
   context.lineWidth = thick
   context.strokeStyle = color
 
+  i = iMin
   loop
-    xx = dx*i;
+    xx = dx * i;
     yy = scale * func(xx / scale)
     if i is iMin then context.moveTo(x0 + xx, y0 - yy) else context.lineTo(x0 + xx, y0 - yy)
     i = i + 0.1
