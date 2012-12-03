@@ -1,0 +1,4 @@
+body { margin:0; }
+canvas { float: left; }
+canvas.graph { margin-top: -500px; }
+.clear { clear: both; }
