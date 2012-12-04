@@ -13,8 +13,10 @@
 
     <div class="clear"></div>
 
-    <input type="text" />
-    <input type="submit" />
+    <form>
+      <input type="text" class="function" />
+      <input type="submit" />
+    </form>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/underscore.min.js"></script>
