@@ -18,6 +18,8 @@
       <input type="submit" />
     </form>
 
+    <ul class="graph-list"></ul>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/underscore.min.js"></script>
     <script src="js/backbone.min.js"></script>
