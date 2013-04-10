@@ -1,4 +1,21 @@
 body { margin:0; }
+.graphs { padding: 10px; }
 canvas { float: left; }
-canvas.graph { margin-top: -500px; }
-.clear { clear: both; }
+.graph { margin-top: -500px; }
+.actions {
+  padding: 30px 40px;
+  text-align: center;
+  font-size: 20px;
+}
+form input[type="text"] {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+form input[type="submit"] {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+}

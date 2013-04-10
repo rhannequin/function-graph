@@ -30,7 +30,7 @@ GraphView = Backbone.View.extend
 
   drawGraph: (graph) ->
     i = @collection.cpt++
-    str = '<canvas class="graph" id="canvas' + i + '" width="1000" height="500"></canvas>'
+    str = '<canvas class="graph" id="canvas' + i + '" width="' + canvas.width + '" height="' + canvas.height + '"></canvas>'
     $('.canvas-box').append str
 
     cv = document.getElementById 'canvas' + i
@@ -92,9 +92,11 @@ AppView = Backbone.View.extend
 
   handleForm: (e) ->
     e.preventDefault()
-    form = $(e.target)
-    val = form.find('input[type="text"]').val()
-    @addGraph val
+    $form = $(e.target)
+    $input = $form.find('input[type="text"]')
+    val = $input.val()
+    $input.val('')
+    @addGraph(val) if val.length
 
   addGraph: (val) ->
     func = (x) -> eval(val)
